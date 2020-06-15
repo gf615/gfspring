@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--第一种方式，在配置文件中维护bean之间的依赖关系；实现类接口的定义是为了解耦调用方和实现-->
+    <!--<beans>
+        <bean name="mongoDbService" class="com.gfar.gfspring.service.mongodb.MongoDbServiceImpl">
+            <property name="mongoDbDao" ref="mongoDbDao"></property>
+        </bean>
+
+        <bean name="mongoDbDao" class="com.gfar.gfspring.dao.mongodb.MongoDbDaoImpl"/>
+    </beans>-->
+    <!--组件扫描（扫描路径）配合注解声明：声明Bean（@Component，@Service），自动注入（@Autowired）-->
+    <context:component-scan base-package="com.gfar.gfspring"/>
+    <!--第一种方式，xml配置文件；第二种方式，注解@PropertySource添加在组件类上；
+    使用的时候直接使用@value注解即可，@Value可以添加的属性上（有set方法），也可以添加在属性的set方法上-->
+    <context:property-placeholder location="classpath:properties/mongodb-configuration.properties"/>
+
+    <import resource="mongodb.xml"/>
+</beans>
