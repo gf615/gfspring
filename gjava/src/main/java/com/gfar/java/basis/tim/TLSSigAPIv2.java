@@ -1,4 +1,4 @@
-package com.gfar.java.basics.tim;
+package com.gfar.java.basis.tim;
 
 // 使用旧版本 base64 编解码实现增强兼容性
 import com.alibaba.fastjson.JSONObject;

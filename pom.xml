@@ -14,6 +14,7 @@
         <module>gaggregationimsdk</module>
         <module>gspring</module>
         <module>gspringmvc</module>
+        <module>ghttpserver</module>
     </modules>
 
     <properties>

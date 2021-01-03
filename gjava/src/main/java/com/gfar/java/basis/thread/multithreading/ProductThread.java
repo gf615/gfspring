@@ -1,8 +1,8 @@
-package com.gfar.java.basics.thread.multithreading;
+package com.gfar.java.basis.thread.multithreading;
 
-import com.gfar.java.basics.thread.multithreading.bean.DataBean;
-import com.gfar.java.basics.thread.multithreading.bean.UserVO;
-import com.gfar.java.basics.thread.multithreading.context.TestContext;
+import com.gfar.java.basis.thread.multithreading.bean.DataBean;
+import com.gfar.java.basis.thread.multithreading.bean.UserVO;
+import com.gfar.java.basis.thread.multithreading.context.TestContext;
 
 import java.util.ArrayList;
 import java.util.List;

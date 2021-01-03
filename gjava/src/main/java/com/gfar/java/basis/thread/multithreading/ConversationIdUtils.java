@@ -1,4 +1,4 @@
-package com.gfar.java.basics.thread.multithreading;
+package com.gfar.java.basis.thread.multithreading;
 
 /**
  * 单聊，根据发送和接收用户生成会话Id

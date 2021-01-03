@@ -1,4 +1,4 @@
-package com.gfar.java.basics.thread.multithreading.bean;
+package com.gfar.java.basis.thread.multithreading.bean;
 
 import java.util.ArrayList;
 import java.util.Collections;

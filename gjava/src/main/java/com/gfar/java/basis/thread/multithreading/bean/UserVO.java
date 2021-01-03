@@ -1,4 +1,4 @@
-package com.gfar.java.basics.thread.multithreading.bean;
+package com.gfar.java.basis.thread.multithreading.bean;
 
 public class UserVO {
     private String userId;

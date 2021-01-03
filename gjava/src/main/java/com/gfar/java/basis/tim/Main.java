@@ -1,4 +1,4 @@
-package com.gfar.java.basics.tim;
+package com.gfar.java.basis.tim;
 
 public class Main {
     public static void main(String[] args) {
