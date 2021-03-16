@@ -79,7 +79,7 @@ public class MongoDbUtils {
         Document document = new Document();
         document.append("uuid",uuid)
                 .append("fileContainer",contextApp)
-                .append("filePath","zhkt/server/upload/"+uuid+"/5m1575365955676.docx"   )
+                .append("filePath","zhkt/service/upload/"+uuid+"/5m1575365955676.docx"   )
                 .append("fileHost","http://test.download.cycore.cn")
                 .append("fileExt","docx")
                 .append("fileSize",0)
