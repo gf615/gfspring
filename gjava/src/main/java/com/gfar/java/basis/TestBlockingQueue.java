@@ -1,4 +1,4 @@
-package com.gfar.java.basis.thread.threadpool;
+package com.gfar.java.basis;
 
 import java.util.concurrent.ArrayBlockingQueue;
 

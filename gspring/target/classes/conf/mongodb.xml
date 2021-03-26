@@ -4,30 +4,6 @@
        xmlns:mongo="http://www.springframework.org/schema/data/mongo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
 
-    <mongo:mongo-client
-            id="mongoClient"
-            replica-set="172.31.132.218:30007,172.31.132.218:30017"
-            credentials="root:1qazWSX@admin">
-        <mongo:client-options
-                connections-per-host="100"
-                min-connections-per-host="5"
-                threads-allowed-to-block-for-connection-multiplier="5"
-                connect-timeout="30000"
-                max-wait-time="30000"
-                socket-keep-alive="true"
-                socket-timeout="40000"
-                description=" mongodb database"
-                max-connection-idle-time="1500"
-                max-connection-life-time="0"
-                heartbeat-socket-timeout="50000"
-                heartbeat-connect-timeout="50000"
-                min-heartbeat-frequency="5"
-                heartbeat-frequency="10"
-        />
-    </mongo:mongo-client>
 
-    <mongo:db-factory id="mongoDbFactory" dbname="cystorage" mongo-ref="mongoClient"/>
-
-    <mongo:template id="mongoTemplate" db-factory-ref="mongoDbFactory"/>
 
 </beans>

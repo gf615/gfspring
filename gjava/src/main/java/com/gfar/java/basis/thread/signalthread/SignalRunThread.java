@@ -1,6 +1,6 @@
 package com.gfar.java.basis.thread.signalthread;
 
-public class MyThread implements Runnable {
+public class SignalRunThread implements Runnable {
     @Override
     public void run() {
         for (int i=0;i<100;i++){
